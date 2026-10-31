@@ -32,6 +32,7 @@ Open `http://127.0.0.1:8000/docs`. Stop the server with `Ctrl+C` and leave the e
 python -m compileall -q app tests
 python -m pytest -q
 python -m ruff check app tests
+```
 # Wind Analytics Backend
 
 FastAPI backend for a wind-generation forecast accuracy dashboard. The service reads forecast and actual generation data from the official Elexon BMRS API, selects the correct day-ahead forecast revision, compares it with delivered generation, and exposes typed endpoints for the dashboard.
